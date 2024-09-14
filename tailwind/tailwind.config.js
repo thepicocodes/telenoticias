@@ -38,6 +38,9 @@ module.exports = {
 					InfTeleantillas: '#F7840C',
 					InfTeleantillasDark: '#EF5A29',
 				},
+				brown: {
+					900: '#0E0803'
+				},
 				darkBrown: {
 					700: '#321B0A'
 				},
@@ -45,11 +48,13 @@ module.exports = {
 				},
 				blue: {
 					100: '#1E97C4',
+					200: '#DFF2FC',
 					300: '#414E9A',
 					900: '#040810'
 				},
 				lightBlue: {
-
+					'primary': '#50B7F0',
+					100: '#F1F9FE'
 				},
 				gray: {
 					1000: '#D0D2D4',

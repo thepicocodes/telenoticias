@@ -8,16 +8,7 @@
  * For esbuild documentation, please see:
  * https://esbuild.github.io/
  */
-/**
- * Front-end JavaScript
- *
- * The JavaScript code you place here will be processed by esbuild. The output
- * file will be created at `../theme/js/script.min.js` and enqueued in
- * `../theme/functions.php`.
- *
- * For esbuild documentation, please see:
- * https://esbuild.github.io/
- */
+
 const navbarToggler = document.getElementById('navbar-toggler');
 const closeNavBtn = document.querySelector('.close');
 const nav = document.getElementById('navigation');
@@ -80,3 +71,82 @@ new Swiper("#lotery-swiper", {
   },
 });
 
+
+
+
+
+// tarot
+new Swiper("#tarot-swiper", {
+  slidesPerView: 3,
+  spaceBetween: 50,
+  slidesPerGroup: 3,
+  pagination: {
+    el: ".tarot-swiper-pagination",
+    type: "fraction",
+  },
+  navigation: {
+    nextEl: ".tarot-swiper-button-next",
+    prevEl: ".tarot-swiper-button-prev",
+  },
+  breakpoints: {
+    320: {
+      slidesPerView: 1,
+      slidesPerGroup: 1,
+    },
+    640: {
+      slidesPerView: 2,
+      slidesPerGroup: 2,
+    },
+    768: {
+      slidesPerView: 2,
+      slidesPerGroup: 2,
+    },
+    1024: {
+      slidesPerView: 3,
+      slidesPerGroup: 3,
+    },
+    1440: {
+      slidesPerView: 3,
+      slidesPerGroup: 3,
+    },
+  },
+});
+
+// 
+//excerpt tarot
+document.querySelectorAll('.tarot-component').forEach(component => {
+  const tarotContainer = component.querySelector('.tarot-content');
+  const tarotToggler = component.querySelector('.tarot-toggler');
+  const fullText = tarotContainer.textContent.trim();
+
+  const wordsToShow = 100;
+  const words = fullText.split(' ');
+  const initialText = words.slice(0, wordsToShow).join(' ');
+  const hiddenText = fullText.substring(initialText.length).trim();
+
+  tarotContainer.textContent = initialText;
+
+  const moreText = document.createElement('span');
+  moreText.className = 'moreText';
+  moreText.textContent = hiddenText;
+  tarotContainer.appendChild(moreText);
+
+  const ellipsis = document.createElement('span');
+  ellipsis.textContent = '...';
+  tarotContainer.appendChild(ellipsis);
+
+  tarotToggler.addEventListener('click', () => {
+    if (moreText.style.display === 'none') {
+      moreText.style.display = 'inline';
+      ellipsis.style.display = 'none';
+      tarotToggler.textContent = 'Ver menos';
+    } else {
+      moreText.style.display = 'none';
+      ellipsis.style.display = 'inline';
+      tarotToggler.textContent = 'Ver más';
+    }
+  });
+
+  moreText.style.display = 'none';
+  ellipsis.style.display = 'inline';
+});

@@ -10,10 +10,10 @@
 
 ?>
 
-<header class="border-b border-b-[#FFEFDA] py-4 px-5">
+<header class="border-b border-b-blue-200 py-4 px-5">
 	<div class="w-full max-w-screen-xl mx-auto flex flex-row items-center justify-between lg:justify-between gap-x-2">
 		<a href="" class="block shrink-0">
-			<img src="<?php echo get_template_directory_uri(); ?>/images/informativos-ta-logo-transparente-02.png" alt="Logo informativos teleantillas" class="block">
+			<img src="<?php echo get_template_directory_uri(); ?>/images/logo-telenoticias.png" alt="Logo telenoticias" class="block">
 		</a>
 		<nav id="navigation" class="hidden lg:flex w-full h-screen lg:h-auto flex-col lg:flex-row items-center lg:justify-center gap-x-1 absolute lg:static left-0 bg-white lg:bg-inherit z-50 <?php echo is_user_logged_in() ? 'top-10' : 'top-0' ?>">
 			<ul id="nav-links" class="w-full h-screen md:h-auto md:w-fit flex flex-col gap-y-5 lg:flex-row lg:items-center gap-x-1 px-5 lg:px-0 text-blue-300 text-sm font-bold">
