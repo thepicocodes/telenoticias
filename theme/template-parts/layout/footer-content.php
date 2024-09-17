@@ -107,28 +107,28 @@
 			<ul class="w-fit mx-auto py-8 grid grid-cols-2 sm:grid-cols-4 md:grid-cols-6 lg:grid-cols-8 items-center justify-items-center gap-x-10 gap-y-5">
 
 				<li class="">
-					<img src="<?php echo get_template_directory_uri(); ?>/images/info-logo.png" alt="Informativos ta" class="">
+					<img src="<?php echo get_template_directory_uri(); ?>/images/info-logo.png" alt="Informativos ta" class="h-[60px] object-contain">
 				</li>
 				<li class="">
-					<img src="<?php echo get_template_directory_uri(); ?>/images/logo-ta.png" alt="Teleantillas" class="">
+					<img src="<?php echo get_template_directory_uri(); ?>/images/logo-ta.png" alt="Teleantillas" class="h-[60px] object-contain">
 				</li>
 				<li class="">
-					<img src="<?php echo get_template_directory_uri(); ?>/images/ts-logo.png" alt="Telesistemas" class="">
+					<img src="<?php echo get_template_directory_uri(); ?>/images/ts-logo.png" alt="Telesistemas" class="h-[60px] object-contain">
 				</li>
 				<li class="">
-					<img src="<?php echo get_template_directory_uri(); ?>/images/telenoticias-logo.png" alt="Telenoticias" class="">
+					<img src="<?php echo get_template_directory_uri(); ?>/images/telenoticias-logo.png" alt="Telenoticias" class="h-[60px] object-contain">
 				</li>
 				<li class="">
-					<img src="<?php echo get_template_directory_uri(); ?>/images/aym-logo.png" alt="Arte y medio" class="">
+					<img src="<?php echo get_template_directory_uri(); ?>/images/aym-logo.png" alt="Arte y medio" class="h-[60px] object-contain">
 				</li>
 				<li class="">
-					<img src="<?php echo get_template_directory_uri(); ?>/images/nota-logo.png" alt="La nota" class="">
+					<img src="<?php echo get_template_directory_uri(); ?>/images/nota-logo.png" alt="La nota" class="h-[60px] object-contain">
 				</li>
 				<li class="">
-					<img src="<?php echo get_template_directory_uri(); ?>/images/hijb-logo.png" alt="HIJB" class="">
+					<img src="<?php echo get_template_directory_uri(); ?>/images/hijb-logo.png" alt="HIJB" class="h-[60px] object-contain">
 				</li>
 				<li class="">
-					<img src="<?php echo get_template_directory_uri(); ?>/images/coral-logo.png" alt="Coral" class="">
+					<img src="<?php echo get_template_directory_uri(); ?>/images/coral-logo.png" alt="Coral" class="h-[60px] object-contain">
 				</li>
 			</ul>
 		</div>
